@@ -1,0 +1,210 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.3, 10 May 2020) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm,columnsep=0.5cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{headingcolor}{HTML}{00C3FF}
+% \colorlet{name}{black}
+\colorlet{tagline}{black}
+\colorlet{heading}{black}
+\colorlet{headingrule}{black}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{black}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Siddhant Mohanty}
+\tagline{ECE MNIT Jaipur 2026}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+% \photoR{2.5cm}{mnnit_log}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{siddhantmohanty606@gmail.com}
+%   \phone{000-00-0000}
+  \mailaddress{Jharkhand, India}
+  \phone{+91 8709319507}
+  \linkedin{siddhant-mohanty-132a02257}
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{0000-0000-0000-0000}
+  %% You can add your own arbtrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+
+
+
+\cvsection{Education}
+
+\cvevent{B.Tech in Electronics \& Communication Engineering}{Malaviya National Institute Of Technology, Jaipur}{November 2022 -- Present}{Jaipur, Rajasthan}
+\begin{itemize}
+\item CGPA - 8.81/10
+\end{itemize}
+\divider
+
+\cvevent{Senior Secondary Examination ISC - Class XII}{Kerala Samajam Model School}{ISC-2021}{Jamshedpur, Jharkhand}
+\begin{itemize}
+\item Percentage - 93.5\%
+\end{itemize}
+\divider
+
+\cvevent{Higher Secondary Examination ICSE - Class X}{Kerala Samajam Model School}{ICSE-2019}{Jamshedpur, Jharkhand}
+\begin{itemize}
+\item Percentage - 93.8\%
+\end{itemize}
+
+
+\columnratio{0.55}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+
+\cvsection{Areas Of Interest}
+\cvtag{Algorithms}\\
+\cvtag{Data Structures}\\
+\cvtag{Data Analytics}\\
+\cvtag{Software Development}\\
+\cvtag{Photography}\\
+\cvtag{Finance}
+
+\cvsection{Achievements}
+
+
+\cvachievement{}{Finalist in the event Case-Questa at the technical fest of BITS Pilani - Apogee 2023}
+\begin{itemize}
+\item For presenting our case study on providing an optimised financial pathway as per the given scenario \\ \item Approximately 200 teams participated across the nation
+\end{itemize}
+
+\cvachievement{}{Finalist of the event PRODUCTOPEDIA in the fest EMINENCE-23 organized by Shri Ram College of Commerce.}
+\begin{itemize}
+\item More than 100 teams participated across nation \\ \item To provide an efficient advertising \& marketing strategy to upscale the footfall at stores of Fastrack
+\end{itemize}
+
+
+
+\cvsection{Technical Skills}
+\begin{itemize}
+    \item \textbf{Programming Languages}: \\Java, C++ (Competitive Programming), Python
+    \item \textbf{Object Oriented Programming}
+    \item \textbf{Other Softwares}:\\ Matlab, LT spice, Autocad, Autodesk Fusion 360, Microsoft Excel, MS Word, Canva
+\end{itemize}
+
+
+\switchcolumn
+
+\cvsection{EXTRA CURRICULARS}
+\projectname{Member of Chess Club}}
+\begin{itemize}
+\item To increase my proficiency at the game \& to promote chess.
+\end{itemize}
+\projectname{Member of Think India}}
+\begin{itemize}
+\item {December 2022 -- November 2023}
+\item {Put use of my ideas in the conduction of Youth Fest 2023 and other various club activities.}
+\end{itemize}
+\projectname{Member of the club Mavericks}}
+\begin{itemize}
+\item {December 2023 -- present}
+\item {Put use of my ideas in the conduction of various club activities.}
+\end{itemize}
+\projectname{Member of the ECE Department Placement Club}}
+\begin{itemize}
+\item {September 2023 -- present}
+\item {Put use of my ideas in the conduction of various club activities to increase the placement statistics of the department.}
+\end{itemize}
+\cvsection{POSITION OF RESPONSIBILITY}
+\projectname{{Executive- Blitzschlag 2024(Cultural Fest of MNIT Jaipur)}}
+\begin{itemize}
+\item Executive of Marketing, Publicity and Operations \& Control team. \\ \item Used my innovative and creative ideas in the successful conduction of the fest.
+\end{itemize}
+\projectname{Lead Volunteer -Orientation Programme of UG \& PG students 2023}}
+\begin{itemize}
+\item Lead the volunteers' team to the successful conduction of the event.
+\end{itemize}
+\projectname{{House Vice-Captain - Joy House}}
+\begin{itemize}
+\item Organized \& Managed all inter house and school \\ competitions, both academic as well as cultural events.
+\end{itemize}
+\end{paracol}
+\end{document}
